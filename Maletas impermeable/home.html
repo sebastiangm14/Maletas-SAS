@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura basica</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      document.write("Bienvenidos a Maletas Impermeables SAS");
+      let name = prompt("por favor ingrese su nombre");
+      console.log(name)
+       
+    </script>
+</head>
+<body>
+    <!--DIVISIONES DENTRO DE UNA PAGINA-->
+    <div id="contenedor">
+
+      <header> 
+          <h1>Maletas impermeables</h1>
+                
+                <!--El elemento de HTML Header (<header>) representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes.-->            
+      </header>  
+      <nav>
+          <!--menu de navegación, logo, redes sociales>-->  
+          <h2>                 
+            <a href="home.html"><img src="imagenes/home.png" alt="home"/></a>
+            <a href="aboutus.html"><img src="imagenes/ABUT.PNG" alt="about us" /></a>
+            <a href="servicios.html"><img src="imagenes/SERV.PNG" alt="servicios"/></a>
+            <a href="contactos.html"><img src="imagenes/CONT.PNG" alt="contactos"/></a>
+         </h2>
+      </nav>
+      <section id="contenido">
+          <article>
+               <h2>Content</h2>
+              <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/IZUfxr11Oco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+              <!--El elemento HTML form ( <form> ) representa una sección de un documento que contiene controles interactivos que permiten a un usuario enviar -->
+            <form id="contacto">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" placeholder="nombre"id="nombre">
+              <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="apellido"  id="apellido">
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" id="correo">
+                <input type="button" value="Enviar formulario" id="boton">
+            </form>
+              <p>Somos especialistas en la fabricacion y creacion de Maletas Impermeables</p>
+              <div>
+                <table  id="tabla">
+                    <tr>
+              
+                    </tr>
+                    
+                  </table>
+
+              </div>
+              </article>
+      </section>
+      <!--<aside> representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento.-->
+      <aside>
+          <h2>Publicidad
+
+          
+          </h2>
+          <img src="data:image/jpeg;base64,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">
+          <p>TYC:Bienvenidos a Maletas Impermeables SAS. Estos Términos y Condiciones rigen su acceso y uso de nuestro sitio web. Al acceder o utilizar el Sitio, usted acepta estos Términos. Si no está de acuerdo con alguna parte de los Términos, le rogamos que no utilice el Sitio. </p>
+        </aside>
+      <!--representa un pie de página para el contenido de sección más cercano o el elemento raíz de sección-->
+      <footer>
+          <h2>Copyright by Sebastian Galindo Morales</h2>
+          <p>We collect limited personal information such as your email address and IP to enhance your experience on our platform. Your data is securely stored and never sold to third parties. We use cookies for analytics and site performance. You may request access to or deletion of your data at any time by contacting us at 3054987287</p>
+      </footer>
+    </div>
+    <!--Enlace al documento de javaScript-->
+    <script src="index.js"></script>
